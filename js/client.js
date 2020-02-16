@@ -1,0 +1,1 @@
+/* Client script for the front end */
