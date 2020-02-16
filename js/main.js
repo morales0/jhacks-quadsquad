@@ -1,6 +1,7 @@
 /* Main front-end script */
 
 /* Globals */
+let info = document.querySelector("#info");
 let feelBtn = document.getElementById("feel-btn");
 let entryForm = document.getElementById("entryForm");
 let feelingCircles = document.querySelector("#feeling-circles");
@@ -23,6 +24,7 @@ let colors = [
 function openform(){
    feelBtn.classList.toggle("hidden");
    entryForm.classList.toggle("hidden");
+   info.classList.toggle("hidden");
 }
 
 /**
@@ -57,6 +59,9 @@ document.getElementById("name").addEventListener("click", () => {
    }
    if (feelBtn.classList.contains("hidden")){
       feelBtn.classList.remove("hidden");
+   }
+   if (info.classList.contains("hidden")){
+      info.classList.remove("hidden");
    }
    if (!feelingCircles.classList.contains("hidden")){
       feelingCircles.classList.toggle("hidden");

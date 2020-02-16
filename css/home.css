@@ -30,6 +30,16 @@ body{
 	flex-direction: column;
 }
 
+#info{
+   position: absolute;
+   top: 200px;
+   align-self: center;
+}
+
+#info p{
+   text-align: center;
+}
+
 #name{
    position: absolute;
    top: 10px;
