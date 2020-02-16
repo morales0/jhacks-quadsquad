@@ -1,2 +1,2 @@
 # jhacks-quadsquad
-Jhacks repo for our project. Chris, Kevin, Carolyn, and Francisco.
+JHacks repo for our project. Chris, Kevin, Carolyn, and Francisco.
