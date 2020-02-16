@@ -11,6 +11,7 @@ html {
 }
 
 body{
+   font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Containers and pages */
@@ -32,6 +33,7 @@ body{
 #name{
    position: absolute;
    top: 10px;
+   left: 0;
    margin: 10px;
    font-size: 1.5rem;
    cursor: pointer;
@@ -50,7 +52,6 @@ body{
 
 #feeling-circles .circle {
    margin: 8px;
-   font-family: 'Lemonada', cursive !important;
 }
 
 .circle {
