@@ -7,7 +7,10 @@ html {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+   background-size: cover;
+}
+
+body{
 }
 
 /* Containers and pages */
@@ -29,6 +32,7 @@ html {
 #name{
    position: absolute;
    top: 10px;
+   margin: 10px;
    font-size: 1.5rem;
    cursor: pointer;
 }
@@ -45,7 +49,8 @@ html {
 }
 
 #feeling-circles .circle {
-	margin: 8px;
+   margin: 8px;
+   font-family: 'Lemonada', cursive !important;
 }
 
 .circle {
