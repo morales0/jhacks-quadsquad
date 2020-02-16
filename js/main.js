@@ -20,7 +20,7 @@ let colors = [
  * When user clicks on how do you feel, it will bring up the form
  */
 function openform(){
-   feelBtn.style.display = "none";
+   feelBtn.classList.toggle("hidden");
    entryForm.classList.toggle("hidden");  
 }
 
@@ -47,3 +47,19 @@ function resizeCircles(){
       currCircle.style.backgroundColor = colors[i];
    }
 }
+
+/**
+ * Listening to home page button
+ */
+
+document.getElementById("name").addEventListener("click", () => {
+   if (!entryForm.classList.contains("hidden")){
+      entryForm.classList.toggle("hidden");
+   }
+   if (feelBtn.classList.contains("hidden")){
+      feelBtn.classList.remove("hidden");
+   }
+   if (!feelingCircles.classList.contains("hidden")){
+      feelingCircles.classList.toggle("hidden");
+   }
+});
