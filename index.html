@@ -27,33 +27,73 @@
 		<!-- Center "feeling" prompt -->
       <div class="prompt">
 			<!-- How do you feel ? -->
-			<button type="button" id="feel-btn" class="btn btn-lg btn-outline-primary">HOW DO YOU FEEL?</button>
+			<button type="button" id="feel-btn" class="btn btn-lg btn-outline-primary" onclick="openform()">HOW DO YOU FEEL?</button>
 			
 			<!-- Form -->
-			<form>
+			<form id="entryForm" autocomplete="off" class="hidden">
 				<div class="form-group">
-				  <label for="comment">Your comment</label>
 				  <input type="text" class="form-control" id="comment" aria-describedby="commentInput" placeholder="Enter your comment">
 				  <small id="commentHelp" class="form-text text-muted">This will be anonymous.</small>
-				</div>
-				<div class="form-check form-check-inline">
-					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-					<label class="form-check-label" for="inlineCheckbox1">1</label>
-				 </div>
-				 <div class="form-check form-check-inline">
-					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-					<label class="form-check-label" for="inlineCheckbox2">2</label>
-				 </div>
-				 <div class="form-check form-check-inline">
-					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-					<label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-				 </div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			 </form>
+            </div>
+            <div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="lonely-check" value="lonely">
+                  <label class="form-check-label" for="lonely-check">Lonely</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="anxious-check" value="anxious">
+                  <label class="form-check-label" for="anxious-check">Anxious</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="stressed-check" value="stressed">
+                  <label class="form-check-label" for="stressed-check">Stressed</label>
+               </div>
+            </div>
+            <div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="peaceful-check" value="peaceful">
+                  <label class="form-check-label" for="peaceful-check">Peaceful</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="happy-check" value="happy">
+                  <label class="form-check-label" for="happy-check">Happy</label>
+               </div>
+               <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="annoyed-check" value="annoyed">
+                  <label class="form-check-label" for="annoyed-check">Annoyed</label>
+               </div>
+            </div>
+				<button type="button" class="btn btn-primary" onclick="submitEntry()">Submit</button>
+          </form>
+          
+         <!-- Circles -->
+          <div id="feeling-circles" class="hidden">
+             <div id="lonely-circle" class="circle">
+                <span>Lonely</span>
+             </div>
+             <div id="anxious-circle" class="circle">
+               <span>Anxious</span>
+             </div>
+             <div id="stressed-circle" class="circle">
+               <span>Stressed</span>
+             </div>
+             <div id="peaceful-circle" class="circle">
+               <span>Peaceful</span>
+             </div>
+             <div id="happy-circle" class="circle">
+               <span>Happy</span>
+             </div>
+             <div id="annoyed-circle" class="circle">
+               <span>Annoyed</span>
+             </div>
+          </div>
+
+
 
 		</div>
    </div>
 
+   <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -2,9 +2,10 @@
   "name": "jhacks-quadsquad",
   "version": "1.0.0",
   "description": "JHacks project. Mental health app.",
-  "main": "/js/main.js",
+  "main": "./js/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/morales0/jhacks-quadsquad#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.2"
   }
 }
