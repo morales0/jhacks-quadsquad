@@ -1,0 +1,27 @@
+{
+  "name": "jhacks-quadsquad",
+  "version": "1.0.0",
+  "description": "JHacks project. Mental health app.",
+  "main": "./js/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morales0/jhacks-quadsquad.git"
+  },
+  "author": "Quad Squad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morales0/jhacks-quadsquad/issues"
+  },
+  "homepage": "https://github.com/morales0/jhacks-quadsquad#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.2"
+  }
+}
