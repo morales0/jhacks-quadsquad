@@ -9,12 +9,12 @@ let feelingCircles = document.querySelector("#feeling-circles");
 let feelings = ["lonely", "anxious", "stressed", "peaceful", "happy", "annoyed"];
 let sizes = [45, 48, 32, 22, 68, 50];
 let colors = [
-   "rgba(127, 183, 190, .8)",
-   "rgba(245, 251, 239, .8)",
-   "rgba(199, 223, 197, .8)",
+   "rgba(255, 192, 203, .8)",
+   "rgba(255, 243, 245, .8)",
+   "rgba(255, 255, 224, .8)",
    "rgba(226, 250, 219, .8)",
-   "rgba(213, 201, 223, .8)",
-   "rgba(128, 145, 196, .8)"
+   "rgba(240, 224, 255, .8)",
+   "rgba(224, 240, 255, .8)"
 ];
 
 /**
