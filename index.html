@@ -26,7 +26,31 @@
 
 		<!-- Center "feeling" prompt -->
       <div class="prompt">
-         <button type="button" id="feel-btn" class="btn btn-lg btn-outline-primary">HOW DO YOU FEEL?</button>
+			<!-- How do you feel ? -->
+			<button type="button" id="feel-btn" class="btn btn-lg btn-outline-primary">HOW DO YOU FEEL?</button>
+			
+			<!-- Form -->
+			<form>
+				<div class="form-group">
+				  <label for="comment">Your comment</label>
+				  <input type="text" class="form-control" id="comment" aria-describedby="commentInput" placeholder="Enter your comment">
+				  <small id="commentHelp" class="form-text text-muted">This will be anonymous.</small>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+					<label class="form-check-label" for="inlineCheckbox1">1</label>
+				 </div>
+				 <div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+					<label class="form-check-label" for="inlineCheckbox2">2</label>
+				 </div>
+				 <div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+					<label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+				 </div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			 </form>
+
 		</div>
    </div>
 

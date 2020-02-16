@@ -13,8 +13,7 @@
 
 .prompt{
    display: flex;
-   height: 200px;
-   width: 300px;
+   flex-direction: column;
 }
 
 
